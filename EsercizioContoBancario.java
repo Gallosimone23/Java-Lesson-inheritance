@@ -7,7 +7,7 @@ package eserciziocontobancario;
 
 /**
  *
- * @author gallo.simone
+ * @author LABSISE
  */
 public class EsercizioContoBancario {
 
@@ -15,8 +15,7 @@ public class EsercizioContoBancario {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ContoBancario c1 = new ContoBancario("ciao", 22);
-        
+        // TODO code application logic here
     }
     
 }
