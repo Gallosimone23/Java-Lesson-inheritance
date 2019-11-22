@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package eserciziocontobancario;
 
 import javax.swing.JOptionPane;
 
@@ -13,8 +12,8 @@ import javax.swing.JOptionPane;
  */
 public class ContoBancario {
 
-    private String numeroConto;
-    private int bilancio = 0;
+    protected String numeroConto;
+    protected int bilancio = 0;
 
     public ContoBancario(String numeroConto) {
         this.numeroConto = numeroConto;
@@ -34,7 +33,7 @@ public class ContoBancario {
 
     }
 
-    public int prelievo() {
+    public void prelievo() {
         int soldi = 0;
         do {
             soldi = Integer.parseInt(JOptionPane.showInputDialog("Inserire soldi"));
@@ -44,3 +43,13 @@ public class ContoBancario {
                 JOptionPane.showMessageDialog(null, "Non ci sono abbastanza soldi");
             }
         } while (bilancio < soldi);
+        
+    }
+
+    
+public void deposito() {
+        int soldi = 0;
+        soldi = Integer.parseInt(JOptionPane.showInputDialog("Quanti soldi vuoi depositare?"));
+        bilancio = bilancio + soldi;
+    }
+}
